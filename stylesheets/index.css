@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(223, 15, 171) , rgb(0, 0, 0));
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.menu-list li a{
+    color:white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.logo img{
+    max-height: 60px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+

@@ -8,6 +8,11 @@
     font-family:'Courier New', Courier, monospace ;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* Estilos MENU-NAV */
 .menu{
     display: flex;
@@ -30,6 +35,59 @@
     color:white;
     text-transform: uppercase;
     font-size: 18px;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+#menu-hamburguer{
+    display: none;
+}
+
+/* Diseño responsive */
+@media screen and (max-width: 768px) {
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        left: 43%;
+        transform: translateX(-50%);
+        width: 60%;
+        background-color: black;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+
+    .logo {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-list li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 10px;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    #menu-hamburguer:checked ~ .menu-list {
+        display: flex;
+    }
 }
 
 .logo img{

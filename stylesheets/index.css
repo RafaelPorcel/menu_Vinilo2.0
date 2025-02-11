@@ -37,6 +37,12 @@ html, body {
     font-size: 18px;
 }
 
+.menu-list li a:hover {
+    color: #fcfcfc; 
+    background-color: rgba(255, 255, 255, 0.363);
+    border-radius: 5px;
+}
+
 .menu-icon{
     display: none;
     cursor: pointer;
@@ -167,4 +173,6 @@ html, body {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
+
+
 

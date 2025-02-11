@@ -15,6 +15,7 @@ html, body {
 
 /* Estilos MENU-NAV */
 .menu{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -186,6 +187,9 @@ html, body {
     text-decoration: underline;
 }
 
+main {
+    margin-top: 50px;
+}
 
 .main-container {
     display: flex;

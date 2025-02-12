@@ -162,11 +162,13 @@ html, body {
 
 .footer-section a:hover {
     color:black;
-    transform: scale(1.1);
+    font-size: 18px;
+    transition: transform 0.8s ease;
 }
 
 .footer-section a:hover img {
-    transform: scale(1.4);
+    transform: scale(1.5);
+    transition: transform 0.8s ease;
 }
 
 

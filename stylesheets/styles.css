@@ -75,9 +75,22 @@ html, body {
         max-width: 100% !important;
     }
 
+    .main-section-offers {
+        max-width: 100% !important;
+    }
+
     .main-contact-section {
-        flex-direction: column; /* Apila los elementos en vertical */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section-offers {
+        max-width: 100% !important;
+    }
+
+    .main-contact-offers {
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu-list {
@@ -273,6 +286,27 @@ main {
 }
 
 .main-section-events img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.main-section-offers {
+    flex: 1 1 calc(30% - 20px);
+    max-width: 30%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.main-section-offers img{
     width: 100%;
     max-width: 100%;
     height: auto;

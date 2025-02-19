@@ -61,7 +61,6 @@ html, body {
         align-items: center;
     }
 
-
     .main-container {
         flex-direction: column;
         align-items: center;
@@ -70,6 +69,10 @@ html, body {
     .main-section {
         flex: 1 1 100%;
         width: 100%;
+    }
+
+    .main-section-events {
+        max-width: 100% !important;
     }
 
     .main-contact-section {
@@ -254,6 +257,27 @@ main {
 
 .main-section iframe {
     width: 100%;
+}
+
+.main-section-events {
+    flex: 1 1 calc(30% - 20px);
+    max-width: 30%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.main-section-events img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .main-contact-section iframe{

@@ -55,12 +55,6 @@ html, body {
 
 /* Diseño responsive */
 @media screen and (max-width: 768px) {
-    .menu{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
     .main-container {
         flex-direction: column;
         align-items: center;
@@ -93,41 +87,48 @@ html, body {
         align-items: center;
     }
 
-    .menu-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 10px;
-        left: 39%;
-        transform: translateX(-50%);
-        width: 60%;
-        background-color: black;
-        padding: 10px 0;
-        text-align: center;
-        border-radius: 20px;
-    }
-
-
     .logo {
         flex-grow: 1;
         display: flex;
         justify-content: center;
     }
 
-    .menu-list li {
-        margin: 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        left: 42%;
+        transform: translateX(-50%);
+        width: 60%;
+        max-width: 60%;
+        background-color: black;
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 10px;
+        z-index: 1000;
     }
 
     .menu-icon {
         display: block;
+        cursor: pointer;
         margin-right: 10px;
     }
 
-    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-list li {
+        margin: 15px 0;
+    }
+
     #menu-hamburguer:checked ~ .menu-list {
         display: flex;
+        justify-content: center; /* Centra los elementos dentro */
+        align-items: center;
     }
 }
+
 
 .logo img{
     max-height: 60px;

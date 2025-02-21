@@ -98,17 +98,6 @@ html, body {
         justify-content: center;
     }
 
-    .main-section-video {
-        width: 100% !important;
-        height: auto;
-    }
-
-    .main-section-video video {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* o prueba con cover si quieres que llene el espacio */
-    }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -259,6 +248,7 @@ html, body {
 /* Estilos MAIN */
 main {
     margin-top: 50px;
+    min-height: 100vh;
 }
 
 .main-container {
@@ -279,23 +269,18 @@ main {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.main-section-video{
-    width: 60%;
-    text-align: center;
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: auto;
-    overflow: hidden;
+.main-section-video {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .main-section-video video {
     width: 100%;
-    margin: auto;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .main-section img {

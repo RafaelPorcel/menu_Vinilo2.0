@@ -96,6 +96,15 @@ html, body {
         align-items: center;
     }
 
+    .main-section-index {
+        margin-top: 80px;
+    }
+
+    .main-section-index-rrss {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
     .logo {
         flex-grow: 1;
         display: flex;
@@ -260,7 +269,9 @@ main {
 }
 
 .main-section-index{
+    margin-top: 25px;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .main-section-index img {
@@ -273,13 +284,13 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .main-section-index-rrss img{
     width: 100px;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .main-container {
